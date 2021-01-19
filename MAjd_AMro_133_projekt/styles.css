@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: black;
+  background-color: white;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.title {
+  font-size: 2rem;
+  color:black;
+  background-color: orange;
+}
+
+.title span {
+  color: orange;
+  background-color: black;
+}
+
+.products {
+  padding: 0 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 3rem 1rem;
+  padding: 15rem 0;
+}
+
+.productname {
+  padding: 1rem;
+  width: 100%;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px;
+  padding: 1rem 1.8rem;
+  color: var(--black);
+  font-weight: 500;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.korb {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  padding: 1.6rem;
+  border-radius: 2rem;
+  overflow-y: scroll;
+  background-color: rgb(173, 170, 170);
+  visibility: hidden;
+}
+
+.korb.show {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+.korboverlay.show {
+  visibility: visible;
+}
+
+.korbitem svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.korbitem {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  width: 60%;
+  margin: 2rem auto;
+}
+
+.korbitem div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.korbitem .price {
+  font-weight: 700;
+}
+
+.korbfooter {
+  text-align: center;
+}
+
+.korbfooter h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+
+
+
+ 
+
+ 
